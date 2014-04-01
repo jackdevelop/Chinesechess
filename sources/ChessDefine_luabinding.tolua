@@ -1,0 +1,24 @@
+$#include "cocos2d.h"
+$#include "ChessDefine.h"
+
+enum CHESS_TYPE
+{
+	CHESS_NONE,
+	CHESS_BK		= 1,
+	CHESS_BA,
+	CHESS_BB,
+	CHESS_BN,
+	CHESS_BR,
+	CHESS_BC,
+	CHESS_BP,
+	CHESS_BORDER	= 10,
+	CHESS_RK		= 11,
+	CHESS_RA,
+	CHESS_RB,
+	CHESS_RN,
+	CHESS_RR,
+	CHESS_RC,
+	CHESS_RP,
+};
+
+

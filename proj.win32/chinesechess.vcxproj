@@ -13,7 +13,9 @@
   <ItemGroup>
     <ClCompile Include="..\sources\AppDelegate.cpp" />
     <ClCompile Include="..\sources\ChessDefine.cpp" />
+    <ClCompile Include="..\sources\ChessDefine_luabinding.cpp" />
     <ClCompile Include="..\sources\ChessRule.cpp" />
+    <ClCompile Include="..\sources\ChessRule_luabinding.cpp" />
     <ClCompile Include="..\sources\SimulatorConfig.cpp" />
     <ClCompile Include="chinesechess.cpp" />
     <ClCompile Include="ProjectConfigDialog.cpp" />
@@ -22,7 +24,9 @@
   <ItemGroup>
     <ClInclude Include="..\sources\AppDelegate.h" />
     <ClInclude Include="..\sources\ChessDefine.h" />
+    <ClInclude Include="..\sources\ChessDefine_luabinding.h" />
     <ClInclude Include="..\sources\ChessRule.h" />
+    <ClInclude Include="..\sources\ChessRule_luabinding.h" />
     <ClInclude Include="..\sources\SimulatorConfig.h" />
     <ClInclude Include="chinesechess.h" />
     <ClInclude Include="ProjectConfigDialog.h" />

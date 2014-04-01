@@ -5,6 +5,7 @@
 #include "support/CCNotificationCenter.h"
 #include "CCLuaEngine.h"
 #include <string>
+#include "ChessRule_luabinding.h"
 
 using namespace std;
 using namespace cocos2d;
@@ -40,6 +41,10 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCScriptEngineManager::sharedManager()->setScriptEngine(pEngine);
 
     CCLuaStack *pStack = pEngine->getLuaStack();
+
+	lua_State* L = pStack->getLuaState();
+    
+	tolua_ChessRule_luabinding_open(L);
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     // load framework

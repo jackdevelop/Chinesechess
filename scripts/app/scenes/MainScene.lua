@@ -4,9 +4,8 @@ local MainScene = class("MainScene", function()
 end)
 
 function MainScene:ctor()
-    ui.newTTFLabel({text = "Hello, World", size = 64, align = ui.TEXT_ALIGN_CENTER})
-        :pos(display.cx, display.cy)
-        :addTo(self)
+   print(judgeBK);
+   print(CHESS_TYPE);
 end
 
 function MainScene:onEnter()
